@@ -1,0 +1,29 @@
+// --------------------------------------------------
+// Project styles
+// --------------------------------------------------
+
+body {
+    background-color: $gray-1;
+}
+
+.hero {
+    align-items: center;
+    background-color: $primary;
+    display: flex;    
+    height: 30vh;
+    margin-bottom: 2em;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+}
+
+.content-box {
+    background-color: #ffffff;
+    border: 1px solid $gray-2;
+    border-radius: 0.5em;
+    margin: 0.5em 0;
+    padding: 2em;
+}
