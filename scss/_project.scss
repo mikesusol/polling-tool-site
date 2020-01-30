@@ -8,9 +8,11 @@ body {
 
 .hero {
     align-items: center;
-    background-color: $primary;
-    display: flex;    
-    height: 30vh;
+    background-image: url('../images/dumbo.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    height: 40vh;
     margin-bottom: 2em;
 }
 
@@ -18,6 +20,7 @@ body {
     color: #ffffff;
     font-size: 60px;
     text-align: center;
+    text-shadow: 0 0 0.2em #000000;
 }
 
 .content-box {

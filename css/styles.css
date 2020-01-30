@@ -9806,20 +9806,23 @@ body {
 /* line 9, ../../../../Dropbox/Github/starter-site/scss/_project.scss */
 .hero {
   align-items: center;
-  background-color: #9c0d63;
+  background-image: url("../images/dumbo.jpg");
+  background-position: center bottom;
+  background-size: cover;
   display: flex;
-  height: 30vh;
+  height: 40vh;
   margin-bottom: 2em;
 }
 
-/* line 17, ../../../../Dropbox/Github/starter-site/scss/_project.scss */
+/* line 19, ../../../../Dropbox/Github/starter-site/scss/_project.scss */
 .hero-title {
   color: #ffffff;
   font-size: 60px;
   text-align: center;
+  text-shadow: 0 0 0.2em #000000;
 }
 
-/* line 23, ../../../../Dropbox/Github/starter-site/scss/_project.scss */
+/* line 26, ../../../../Dropbox/Github/starter-site/scss/_project.scss */
 .content-box {
   background-color: #ffffff;
   border: 1px solid #e9e9e9;
