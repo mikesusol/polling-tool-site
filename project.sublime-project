@@ -1,0 +1,17 @@
+{
+    "folders":
+    [
+        {
+            "path": "."
+        }
+    ],
+    "build_systems":
+    [
+        {
+            "name": "Sass - C4D",
+            "selector": "source.scss, source.sass",
+            "target": "compile_sass",
+            "cmd": "${project_path}\\scss\\styles.scss"
+        }
+    ]
+}
