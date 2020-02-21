@@ -5,33 +5,92 @@
         <meta charset="utf-8">
         <title>My Project</title>
         <link rel="stylesheet" href="css/styles.css">
+
+<!-- / Drag and drop. https://www.kirupa.com/html5/drag.htm-->
+                                                <meta name="viewport" 
+                                                content="width=device-width, 
+                                                initial-scale=1.0, 
+                                                user-scalable=no" />
+                                          <title>Drag/Drop/Bounce</title>
+                                          <style>
+                                            #container {
+                                              width: 100%;
+                                              height: 200px;
+                                              background-color: #333;
+                                              display: flex;
+                                              align-items: center;
+                                              justify-content: center;
+                                              overflow: hidden;
+                                              border-radius: 0px;
+                                              touch-action: none;
+                                            }
+                                            #item {
+                                              width: 100px;
+                                              height: 100px;
+                                              background-color: #D3D3D3;
+                                              border: 10px solid rgba(136, 136, 136, .5);
+                                              border-radius: 50%;
+                                              touch-action: none;
+                                              user-select: none;
+                                            }
+                                            #item:active {
+                                              background-color: rgba(168, 218, 220, 1.00);
+                                            }
+                                            #item:hover {
+                                              cursor: pointer;
+                                              border-width: 12px;
+                                            }
+                                          </style>
+<!-- / Drag and drop. -->
+
     </head>
     <body>
         <div class="hero">
             <div class="container">
-                <h1 class="hero-title">Welcome</h1>
+                <h1 class="hero-title">Poll</h1>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <div class="content-box">
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
                         <button class="btn btn-primary" data-toggle="popover" title="Hey, a popover!" data-content="Bootstrap makes it easy to implement things like popovers, tooltips, modals, etc.">Popover</button>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-4">
                     <div class="content-box">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-                        <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Hey, a tooltip!">Tooltip</button>
+                        <p><strong>THIS TOO, SHALL PASS...</strong> We should be concerned but this is how the world works. We’ve seen much worse... Nixon, McCarthyism, Civil War, Jim Crow etc. Have faith in democracy!</p>
+                        <!-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Hey, a tooltip!">Tooltip</button> -->
                     </div>
                 </div>
-                <div class="col-md-4">
+                 <div class="col-md-4">
+                    <div class="content-box">
+                        <p><strong>AMERICA HAS BEEN HERE BEFORE...</strong> While some might not agree, what we are witnessing is a <strong>FEATURE</strong> and <strong><i>not a bug</strong></i>. Trump is an anomaly. While we’re currently witnessing extreme abuse of power, I think our democracy will survive. After votes are cast in the next election (or, eventually), the ship of state will probably right itself and we will return to our typical state of moderate dysfunction.
+                        </p>
+                        <!-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Hey, a tooltip!">Tooltip</button> -->
+                    </div>
+                </div>
+                 <div class="col-md-4">
+                    <div class="content-box">
+                        <p><strong>AMERICA HAS BEEN HERE BEFORE...</strong> What we are witnessing is a <strong>BUG</strong> and <strong><i>not a feature</strong></i> of our system. Trumpism is corrosive. We are witnessing extreme corruption, politically and/or otherwise. I believe democracy itself is at risk and rapidly moving away from a place where the citizenry can effect change through process.
+                        </p>
+                        <!-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Hey, a tooltip!">Tooltip</button> -->
+                    </div>
+                </div>
+                   <div class="col-md-4">
+                    <div class="content-box">
+                        <p><strong>THERE’S A VERY REAL AND <i>EXTREME</i> RISK OF A COMPLETE AND CATASTROPHIC FAILURE OF OUR DEMOCRACY...</strong> We’re witnessing an episode of American history that is unique. While our democracy could endure, it will be in a form I would find intolerable and unjust. The economy could thrive or collapse but, either way, inequality will continue to marginalize people at an exponential rate.
+                        </p>
+                        <!-- <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Hey, a tooltip!">Tooltip</button> -->
+                    </div>
+                </div>
+                <!-- <div class="col-md-4">
                     <div class="content-box">
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
                         <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Modal</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -64,5 +123,82 @@
             })
         </script>
         <!-- / jQuery & Bootstrap scripts. -->
+
+<!-- / Drag and drop. https://www.kirupa.com/html5/drag.htm-->
+<div id="outerContainer">
+                                                    <div id="container">
+                                                <div id="item">
+
+                                            </div>
+                                        </div>
+                                      </div>
+
+                                      <script>
+                                        var dragItem = document.querySelector("#item");
+                                        var container = document.querySelector("#container");
+
+                                        var active = false;
+                                        var currentX;
+                                        var currentY;
+                                        var initialX;
+                                        var initialY;
+                                        var xOffset = 0;
+                                        var yOffset = 0;
+
+                                        container.addEventListener("touchstart", dragStart, false);
+                                        container.addEventListener("touchend", dragEnd, false);
+                                        container.addEventListener("touchmove", drag, false);
+
+                                        container.addEventListener("mousedown", dragStart, false);
+                                        container.addEventListener("mouseup", dragEnd, false);
+                                        container.addEventListener("mousemove", drag, false);
+
+                                        function dragStart(e) {
+                                          if (e.type === "touchstart") {
+                                            initialX = e.touches[0].clientX - xOffset;
+                                            initialY = e.touches[0].clientY - yOffset;
+                                          } else {
+                                            initialX = e.clientX - xOffset;
+                                            initialY = e.clientY - yOffset;
+                                          }
+
+                                          if (e.target === dragItem) {
+                                            active = true;
+                                          }
+                                        }
+
+                                        function dragEnd(e) {
+                                          initialX = currentX;
+                                          initialY = currentY;
+
+                                          active = false;
+                                        }
+
+                                        function drag(e) {
+                                          if (active) {
+                                          
+                                            e.preventDefault();
+                                          
+                                            if (e.type === "touchmove") {
+                                              currentX = e.touches[0].clientX - initialX;
+                                              currentY = e.touches[0].clientY - initialY;
+                                            } else {
+                                              currentX = e.clientX - initialX;
+                                              currentY = e.clientY - initialY;
+                                            }
+
+                                            xOffset = currentX;
+                                            yOffset = currentY;
+
+                                            setTranslate(currentX, currentY, dragItem);
+                                          }
+                                        }
+
+                                        function setTranslate(xPos, yPos, el) {
+                                          el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+                                        }
+                                      </script>
+<!-- / Drag and drop. -->
+
     </body>
 </html>
